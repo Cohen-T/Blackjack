@@ -1,0 +1,75 @@
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: url('tabletop.png') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+.dealer-space{
+    margin-top: 330px;
+}
+
+#dealer-cards img{
+    height: 175px;
+    width: 125px;
+    margin: 1px;
+    z-index: 1;
+}
+
+#your-cards img{
+    height: 175px;
+    width: 125px;
+    margin: 1px;
+    z-index: 1;
+}
+
+#hit{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+
+#stay{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.btn{
+    cursor: pointer;
+    border: 1px solid gray;
+    background-color: gray;
+    padding: 14px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.btn:hover{
+    background: red;
+}
+
+.bottom-btn{
+    display: flex;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100vw); /* Start off the screen to the left */
+    }
+    to {
+        transform: translateX(0);
+    }
+}
